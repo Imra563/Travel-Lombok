@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Gunung Rinjani</header>
+
+  <div class="gallery">
+    <img src="gambar/rinjani.jpg" alt="Air Terjun 1" />
+    <img src="gambar/rinjani2.jpg" alt="Air Terjun 2" />
+    <img src="gambar/rinjani3.jpg" alt="Air Terjun 3" />
+    <img src="gambar/rinjani4.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Gunung Rinjani</h2>
+    <p>Gunung Rinjani adalah gunung berapi tertinggi kedua di Indonesia, menjulang megah dengan ketinggian 3.726 meter di atas permukaan laut. Terletak di Pulau Lombok, Nusa Tenggara Barat, Rinjani bukan hanya sekadar destinasi bagi para pendaki, tetapi juga simbol kebanggaan dan spiritualitas masyarakat Sasak.
+
+      Dikelilingi oleh Taman Nasional Gunung Rinjani, kawasan ini menawarkan keanekaragaman hayati yang luar biasa, jalur pendakian menantang, serta pemandangan alam yang spektakuler. Salah satu daya tarik utama di ketinggian ini adalah Danau Segara Anak yang terletak di dalam kaldera bekas letusan besar ribuan tahun lalu. Danau ini berwarna biru kehijauan, seolah menjadi permata yang tersembunyi di tengah pegunungan. Di tepi danau, berdiri pula Gunung Barujari, kerucut vulkanik aktif yang masih sering mengeluarkan asap dan menambah aura dramatis Rinjani.
+      
+      Pendakian ke puncak Rinjani adalah impian banyak petualang. Rutenya tidak mudah dan menantang stamina serta mental, namun setiap langkahnya disuguhi lanskap indah: padang savana, hutan tropis, kabut pagi, dan langit malam yang bertabur bintang. Di beberapa titik, pendaki juga akan menemui sumber air panas alami yang dipercaya memiliki khasiat penyembuhan.
+      
+      Selain keindahan alamnya, Rinjani juga memiliki nilai budaya dan spiritual. Setiap tahun, masyarakat Hindu Lombok dan Bali melakukan upacara keagamaan di Segara Anak untuk menghormati roh leluhur.
+      
+      Gunung Rinjani bukan hanya sebuah gunung—ia adalah tempat suci, ladang petualangan, dan lambang keindahan alam Indonesia yang sejati. Bagi siapa pun yang berani menaklukkannya, Rinjani akan menyisakan kesan mendalam yang tak terlupakan.</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13958.054890238114!2d116.4470490389067!3d-8.411273689011457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc2d800216cccf%3A0x3c03cdbf11d30a1e!2sGn.%20Rinjani!5e1!3m2!1sid!2sid!4v1744414998718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

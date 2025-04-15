@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Pantai Kuta Mandalika</header>
+
+  <div class="gallery">
+    <img src="gambar/beach-5111606_640.jpg" alt="Air Terjun 1" />
+    <img src="gambar/kuta-mandalika.jpg" alt="Air Terjun 2" />
+    <img src="gambar/kuta3.webp" alt="Air Terjun 3" />
+    <img src="gambar/Screenshot_20220418-140416_Instagram-1024x679.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Pantai Kuta Mandalika</h2>
+    <p>Pantai Kuta Mandalika merupakan salah satu destinasi wisata unggulan di kawasan selatan Pulau Lombok, Nusa Tenggara Barat. Terletak di Kawasan Ekonomi Khusus (KEK) Mandalika, pantai ini menjadi magnet bagi wisatawan lokal maupun mancanegara berkat keindahan alamnya yang masih asri dan suasana yang tenang.
+
+      Hamparan pasir putih yang unik menyerupai butiran merica, air laut yang jernih bergradasi biru kehijauan, serta bukit-bukit hijau yang mengelilinginya membuat Pantai Kuta Mandalika tampil memukau dari segala sisi. Pantai ini cocok untuk berbagai aktivitas seperti berenang, berselancar, bermain pasir, hingga sekadar bersantai menikmati panorama alam yang memanjakan mata.
+      
+      Di sekitar pantai, telah dibangun berbagai fasilitas penunjang pariwisata, seperti hotel, resort, restoran, dan jalur akses yang nyaman, seiring dengan pengembangan Mandalika sebagai kawasan pariwisata super prioritas. Tak jauh dari pantai, terdapat Sirkuit Mandalika (Pertamina Mandalika International Circuit) yang menjadi lokasi ajang balap MotoGP, membuat kawasan ini semakin dikenal dunia.
+      
+      Pantai Kuta Mandalika juga lekat dengan kearifan lokal dan budaya Sasak. Salah satu perayaan khas yang terkenal adalah Festival Bau Nyale, tradisi menangkap cacing laut yang diyakini sebagai jelmaan Putri Mandalika – seorang tokoh legenda lokal yang dikenal akan kecantikan dan pengorbanannya.
+      
+      Dengan kombinasi pesona alam, fasilitas modern, dan nilai budaya yang kental, Pantai Kuta Mandalika tidak hanya menawarkan liburan yang menyenangkan, tetapi juga pengalaman yang kaya akan cerita dan makna.
+      
+      </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13940.142760660274!2d116.27287053904065!3d-8.89473025879419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcda9d5c27174e5%3A0x7189bdd6dc8af5b!2sPantai%20Kuta%20Lombok!5e1!3m2!1sid!2sid!4v1744412654917!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

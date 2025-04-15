@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Pantai Pink</header>
+
+  <div class="gallery">
+    <img src="gambar/pink1.jpg" alt="Air Terjun 1" />
+    <img src="gambar/pink2.webp"Air Terjun 2" />
+    <img src="gambar/pink3.jpeg" alt="Air Terjun 3" />
+    <img src="gambar/pantai-pink.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Pantai Pink</h2>
+    <p>Pantai Pink, atau yang secara lokal dikenal dengan nama Pantai Tangsi, adalah salah satu destinasi paling unik dan menakjubkan di Lombok Timur. Keistimewaan utama pantai ini terletak pada warna pasirnya yang tidak biasa—bernuansa kemerahan hingga tampak berwarna pink, terutama saat terkena cahaya matahari. Warna ini berasal dari pecahan terumbu karang merah (foraminifera) yang bercampur dengan pasir putih alami, menciptakan gradasi warna yang luar biasa indah dan langka.
+
+      Terletak di kawasan Jerowaru, sekitar 2–3 jam perjalanan dari Kota Mataram, Pantai Pink menawarkan pemandangan laut yang tenang, air jernih berwarna toska, serta garis pantai yang dikelilingi bukit hijau dan batuan karang eksotis. Keasrian dan ketenangan pantai ini menjadikannya tempat yang sempurna untuk bersantai, menikmati alam, hingga snorkeling atau menyewa perahu tradisional untuk menjelajah pulau-pulau kecil di sekitarnya.
+      
+      Salah satu aktivitas favorit wisatawan adalah naik ke bukit kecil di sisi timur pantai. Dari atas, panorama Pantai Pink tampak semakin menawan—dengan kontras antara birunya laut, hijaunya pepohonan, dan warna pasir yang memikat hati.
+      
+      Meski akses menuju Pantai Pink cukup menantang karena jalan yang masih alami, keindahan yang ditawarkan pantai ini benar-benar sebanding. Pantai Pink adalah destinasi tersembunyi yang wajib dikunjungi bagi para pencinta wisata alam, fotografer, maupun pelancong yang mencari pengalaman tak terlupakan di Lombok.
+      
+      </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27883.81797698295!2d116.53722532113356!3d-8.848224031905614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e1!3m2!1sid!2sid!4v1744414767536!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

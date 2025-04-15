@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - PANTAI SENGGIGI</header>
+
+  <div class="gallery">
+    <img src="gambar/aerial-view-sandy-beach-with-tourists-swimming-beautiful-clear-sea-water-sumilon-island-beach-landing-near-oslob-cebu-philippines-boost-up-color-processing (1).jpg" alt="Air Terjun 1" />
+    <img src="gambar/sengigi 1.webp" alt="Air Terjun 2" />
+    <img src="gambar/sengigi.webp" alt="Air Terjun 3" />
+    <img src="gambar/senggigi 2.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Pantai Senggigi</h2>
+    <p>Pantai Senggigi merupakan salah satu destinasi wisata unggulan di Pulau Lombok, Nusa Tenggara Barat. Terletak di sisi barat pulau, pantai ini menawarkan panorama alam yang menakjubkan, kombinasi antara garis pantai yang memanjang, pasir putih yang lembut, dan air laut yang jernih bergradasi biru kehijauan.
+
+      Keindahan Pantai Senggigi semakin memikat dengan latar belakang perbukitan hijau yang asri. Pengunjung bisa menikmati berbagai aktivitas seperti berenang, snorkeling, atau sekadar bersantai di pinggir pantai sambil menikmati angin sepoi-sepoi. Terumbu karang di kawasan ini juga cukup terjaga, sehingga menjadi rumah bagi berbagai jenis ikan tropis, menjadikannya surga bagi pecinta bawah laut.
+      Pantai ini juga terkenal dengan pemandangan matahari terbenamnya yang luar biasa. Dari bibir pantai, wisatawan dapat menyaksikan langit yang berubah warna menjadi jingga keemasan dengan siluet Gunung Agung di Bali yang tampak dari kejauhan.
+      
+      Selain keindahan alam, kawasan Senggigi juga telah berkembang sebagai pusat pariwisata. Terdapat berbagai pilihan akomodasi mulai dari hotel berbintang hingga homestay, restoran yang menyajikan kuliner lokal maupun internasional, serta toko oleh-oleh khas Lombok. Kehidupan malam di Senggigi cukup hidup dengan adanya café, bar, dan pertunjukan musik lokal yang kental dengan nuansa budaya Sasak.
+      
+      Pantai Senggigi adalah pilihan tepat bagi wisatawan yang ingin menikmati pesona alam, budaya lokal, dan kenyamanan fasilitas wisata modern dalam satu paket perjalanan.</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27911.230195649587!2d116.00155961083982!3d-8.478734300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcde9d6e28dfec9%3A0xcc02a56300f22ec9!2sPantai%20Senggigi!5e1!3m2!1sid!2sid!4v1744410664493!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

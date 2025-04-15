@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Desa Sade</header>
+
+  <div class="gallery">
+    <img src="gambar/sade.jpg" alt="Air Terjun 1" />
+    <img src="gambar/sade2.webp" alt="Air Terjun 2" />
+    <img src="gambar/sade3.jpg" alt="Air Terjun 3" />
+    <img src="gambar/sade4.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Desa Sade</h2>
+    <p>Desa Sade terletak di Lombok Tengah, tak jauh dari kawasan wisata Mandalika. Desa ini adalah ikon budaya Pulau Lombok dan dikenal sebagai rumah bagi Suku Sasak, suku asli Lombok yang masih mempertahankan gaya hidup tradisional mereka secara turun-temurun. Di tengah derasnya arus modernisasi, Desa Sade menjadi oase yang memancarkan nuansa masa lalu dengan arsitektur rumah adat, adat istiadat, dan pola kehidupan masyarakat yang autentik.
+
+      Ciri khas utama Desa Sade adalah rumah tradisional Sasak yang disebut Bale Tani, dibangun dari bahan-bahan alami seperti kayu, bambu, alang-alang, dan dinding dari anyaman bambu. Atap rumah terbuat dari jerami dan lantainya dilapisi campuran tanah liat dan kotoran kerbau—sebuah teknik kuno yang dipercaya mampu membuat lantai tetap sejuk dan bebas serangga.
+      
+      Masyarakat Sade hidup dari bertani dan menenun. Kain tenun ikat dan songket hasil karya perempuan desa ini sangat terkenal akan keindahannya. Menenun bukan hanya keahlian, tetapi juga simbol kedewasaan bagi para gadis. Sebelum menikah, setiap perempuan Sasak harus bisa menenun sendiri kainnya. Kegiatan menenun ini bisa disaksikan langsung oleh wisatawan, bahkan kamu bisa mencobanya sendiri.
+      
+      Selain itu, kamu juga akan disuguhi kisah-kisah menarik mengenai adat kawin culik (pernikahan adat di mana calon pengantin pria “menculik” gadis pujaannya), musik tradisional, serta tarian-tarian seperti Tari Gendang Beleq dan Tari Peresean yang menggambarkan keberanian dan kehormatan.
+      
+      Berjalan-jalan di Desa Sade bukan hanya sekadar wisata, tapi perjalanan menembus waktu untuk merasakan bagaimana budaya, filosofi hidup, dan kearifan lokal dijaga dengan penuh hormat dan kebanggaan oleh masyarakat Sasak. Desa ini adalah jantung budaya Lombok yang hidup dalam kesederhanaan, kehangatan, dan harmoni dengan alam.
+      
+      </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.5616870954823!2d116.28941217445083!3d-8.83930289049861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcda9172d983baf%3A0xfa9eed5a2752a97c!2sSade%20Village!5e1!3m2!1sid!2sid!4v1744415187518!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

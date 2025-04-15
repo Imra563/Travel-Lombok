@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Bukit Merese</header>
+
+  <div class="gallery">
+    <img src="gambar/merese.jpg" alt="Air Terjun 1" />
+    <img src="gambar/mandalika1.jpeg" alt="Air Terjun 2" />
+    <img src="gambar/mandalika3.jpg" alt="Air Terjun 3" />
+    <img src="gambar/mandalika4.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Bukir Merese</h2>
+    <p>Bukit Merese adalah salah satu spot paling ikonik dan wajib dikunjungi saat berada di kawasan Mandalika, Lombok Tengah. Terletak tak jauh dari Pantai Tanjung Aan dan Pantai Seger, bukit ini menawarkan panorama alam yang luar biasa indah dari ketinggian. Nama "Merese" sendiri berasal dari bahasa Sasak yang berarti “kering,” karena bukit ini memang cenderung gersang saat musim kemarau namun tetap menawan.
+
+      Dari puncak Bukit Merese, pengunjung akan disuguhi pemandangan 360 derajat yang memukau: hamparan lautan biru sejauh mata memandang, garis pantai yang melengkung indah, perbukitan yang berseling warna hijau dan cokelat, serta matahari yang terbit atau tenggelam dengan dramatis. Waktu terbaik berkunjung adalah saat sunrise dan sunset, ketika cahaya keemasan menyapu seluruh lanskap, menciptakan suasana yang sangat magis dan romantis.
+      
+      Bukit Merese sangat cocok untuk trekking ringan. Jalurnya cukup mudah dilalui bahkan bagi pemula, dan begitu sampai di atas, semua rasa lelah akan terbayar dengan keindahan yang luar biasa. Tak jarang juga wisatawan melakukan sesi foto prewedding, syuting video, atau sekadar duduk santai menikmati angin sepoi-sepoi yang segar.
+      
+      Di bawah bukit, terdapat beberapa pantai kecil tersembunyi yang bisa dicapai dengan berjalan kaki, cocok untuk menjelajah lebih jauh. Bukit Merese bukan hanya destinasi, tapi pengalaman: menghadirkan kedamaian, keindahan, dan kekaguman akan ciptaan Tuhan.
+      
+      </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.852778694201!2d116.3164313744521!3d-8.913924591504925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb3a83b5a599f%3A0xf8cf6a8d2d088cc!2sBukit%20Merese!5e1!3m2!1sid!2sid!4v1744413655150!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

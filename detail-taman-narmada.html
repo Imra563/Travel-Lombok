@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Taman Narmada</header>
+
+  <div class="gallery">
+    <img src="gambar/narmada.jpeg"Air Terjun 1" />
+    <img src="gambar/narmada.jpg" alt="Air Terjun 2" />
+    <img src="gambar/taman narmada2.jpeg" alt="Air Terjun 3" />
+    <img src="gambar/taman narmada3.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Taman Narmada</h2>
+    <p>Taman Narmada adalah sebuah kompleks taman bersejarah yang terletak di Kecamatan Narmada, Lombok Barat, sekitar 10 km sebelah timur Kota Mataram. Dibangun pada tahun 1727 oleh Raja Anak Agung Gede Ngurah Karang Asem dari Kerajaan Mataram Lombok, taman ini awalnya digunakan sebagai tempat peristirahatan kerajaan sekaligus lokasi upacara keagamaan Hindu, khususnya Pekelem, yang biasanya dilakukan di Gunung Rinjani.
+
+      Menariknya, Taman Narmada dirancang sebagai miniatur dari Gunung Rinjani dan Danau Segara Anak. Di dalam kawasan ini terdapat kolam berbentuk danau buatan yang melambangkan danau Segara Anak, serta bangunan pura yang merepresentasikan puncak Gunung Rinjani. Dengan lanskap bertingkat, air yang mengalir dari mata air pegunungan, serta suasana hijau yang tenang, taman ini benar-benar menciptakan kedamaian yang harmonis antara manusia dan alam.
+      
+      Salah satu daya tarik utama taman ini adalah mata air Awet Muda yang dipercaya memiliki khasiat memperpanjang umur dan menjaga kebugaran. Mata air ini berasal langsung dari kaki Gunung Rinjani dan digunakan dalam berbagai ritual keagamaan serta disukai oleh wisatawan sebagai tempat membasuh wajah atau sekadar minum air segarnya.
+      
+      Selain itu, pengunjung juga dapat menjelajahi bangunan-bangunan tradisional, kolam renang alami, dan pelataran luas yang cocok untuk piknik keluarga atau aktivitas fotografi. Bagi pecinta budaya dan sejarah, Taman Narmada adalah tempat yang sempurna untuk menyelami kekayaan tradisi Sasak dan Bali yang menyatu dalam arsitektur dan fungsi taman ini.</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.839002536122!2d116.2019751744465!3d-8.595239087270501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb86c86247e03%3A0x567bd12fafb3bd15!2sNarmada%20Park!5e1!3m2!1sid!2sid!4v1744414551358!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

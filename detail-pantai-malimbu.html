@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Pantai Malimbu</header>
+
+  <div class="gallery">
+    <img src="gambar/bukit-malimbu-detik-851d660dfd32c174850f639ece42304b.jpg" alt="Air Terjun 1" />
+    <img src="gambar/malimbu-b6ffe95128c0149f8dc2c2729b476b31_600x400.jpg" alt="Air Terjun 2" />
+    <img src="gambar/malimbu.jpg" alt="Air Terjun 3" />
+    <img src="gambar/pantai-malimbu-lombok.jpg.webp" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Pantai Malimbu</h2>
+    <p>Pantai Malimbu adalah salah satu permata tersembunyi di pesisir barat laut Pulau Lombok, tepatnya di wilayah Lombok Utara. Terletak sekitar 20 menit perjalanan dari Pantai Senggigi, pantai ini menawarkan pemandangan eksotis yang memadukan pasir putih, air laut jernih kebiruan, dan barisan bukit hijau yang menawan.
+
+      Pantai ini dikenal sebagai tempat terbaik untuk menikmati sunset yang memukau. Dari tebing-tebing Malimbu, pengunjung bisa menyaksikan matahari terbenam di balik cakrawala, menciptakan siluet indah pulau-pulau kecil seperti Gili Trawangan dan Gili Meno di kejauhan. Tak heran jika banyak fotografer dan wisatawan menyempatkan diri berhenti di sini untuk mengabadikan keindahannya.
+      
+      Keindahan Pantai Malimbu juga cocok untuk kegiatan santai seperti piknik, bersepeda motor menikmati jalanan meliuk di tepian bukit, hingga snorkeling di beberapa titik pantai yang memiliki terumbu karang alami. Meskipun tidak sepopuler destinasi besar lainnya, justru ketenangan dan suasana alami inilah yang menjadi daya tarik utama Malimbu.
+      
+      Di sekitar kawasan, tersedia spot-spot istirahat, gazebo sederhana, serta para pedagang lokal yang menjajakan kelapa muda dan camilan khas Lombok, memberikan sentuhan budaya lokal yang ramah dan hangat.
+      
+      Pantai Malimbu adalah destinasi sempurna bagi wisatawan yang mencari ketenangan, keindahan alami, dan pengalaman menikmati sisi romantis Lombok yang belum banyak tersentuh oleh hiruk-pikuk pariwisata massal.
+      
+      </p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.2379399875426!2d116.03552527444383!3d-8.441841685291141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcde9f3383323ab%3A0x8c61ba4ccdb72fae!2sPantai%20malimbu!5e1!3m2!1sid!2sid!4v1744413051132!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

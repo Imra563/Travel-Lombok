@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Gili Trawangan</header>
+
+  <div class="gallery">
+    <img src="gambar/aerial-view-sandy-beach-with-tourists-swimming-beautiful-clear-sea-water-sumilon-island-beach-landing-near-oslob-cebu-philippines-boost-up-color-processing (1).jpg" alt="Air Terjun 1" />
+    <img src="gambar/aerial-view-sandy-beach-with-tourists-swimming-beautiful-clear-sea-water-sumilon-island-beach-landing-near-oslob-cebu-philippines-boost-up-color-processing (2).jpg" alt="Air Terjun 2" />
+    <img src="gambar/pexels-raw-image6-5647361.jpg" alt="Air Terjun 3" />
+    <img src="gambar/pexels-timv924-5657449.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Gili Trawangan</h2>
+    <p>Gili Trawangan adalah pulau terbesar dan paling populer dari tiga gugusan Gili (bersama Gili Air dan Gili Meno) yang terletak di lepas pantai barat laut Pulau Lombok, Nusa Tenggara Barat. Pulau ini dikenal dengan pasir putihnya yang halus, air laut sebening kristal, dan kehidupan bawah laut yang luar biasa indah.
+
+      Meski ukurannya kecil, Gili Trawangan memiliki atmosfer yang hidup dan dinamis. Pulau ini bebas dari kendaraan bermotor, sehingga transportasi utama di sini adalah sepeda, cidomo (kereta kuda khas Lombok), dan berjalan kaki. Hal ini memberikan suasana yang tenang dan bebas polusi, cocok bagi wisatawan yang ingin melarikan diri dari hiruk-pikuk kota.
+      
+      Aktivitas utama di Gili Trawangan adalah snorkeling, diving, dan island hopping. Terumbu karang yang mengelilingi pulau dihuni oleh berbagai jenis ikan tropis, penyu laut, bahkan hiu karang. Banyak dive center yang menawarkan kursus menyelam bagi pemula hingga penyelam profesional. Tak hanya itu, wisatawan juga bisa menikmati panorama bawah laut hanya dengan snorkeling di dekat pantai.
+      
+      Di sore hari, pengunjung dapat menikmati pemandangan matahari terbenam yang memukau dari sisi barat pulau, bahkan Gunung Agung di Bali terlihat jelas saat cuaca cerah. Malam harinya, Gili Trawangan berubah menjadi pusat hiburan dengan deretan bar, live music, beach party, hingga pertunjukan fire dance di tepi pantai.
+      
+      Gili Trawangan adalah destinasi yang ideal bagi siapa saja – dari backpacker hingga pasangan honeymoon yang mencari petualangan, relaksasi, dan pengalaman tropis yang tak terlupakan.</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13960.243860368164!2d116.02590638889019!3d-8.350287886626013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcde0ab4ff1579f%3A0xfcea7c174732d4b2!2sGili%20Trawangan!5e1!3m2!1sid!2sid!4v1744411817415!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>

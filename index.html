@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Lombok Travel Indonesia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #005b96;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-title img {
+      height: 40px;
+    }
+
+    /* Filter Responsive */
+    .filter-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem;
+      background: rgb(170, 197, 255);
+    }
+
+    .filter-bar select {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .paket-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .paket-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+
+    .paket-card:hover {
+      transform: scale(1.01);
+    }
+
+    .paket-images img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .paket-info {
+      padding: 1rem;
+    }
+
+    .paket-info h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .paket-info p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+
+    .paket-info .harga {
+      font-weight: bold;
+      color: #f1c40f;
+      margin-top: 1rem;
+    }
+
+    .pesawat-icon {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #005b96;
+      display: flex;
+      justify-content: space-around;
+      padding: 0.75rem 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    .bottom-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      background: #007ACC;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .bottom-nav a:hover {
+      background: #004a7c;
+    }
+
+    .filter-bar select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 300px;
+  background-color: white;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  appearance: none;
+  cursor: pointer;
+}
+
+.filter-bar select:focus {
+  outline: none;
+  border-color: #005b96;
+  background-color: #5a8aaa;
+  color: rgb(46, 48, 82);
+  box-shadow: 0 0 8px rgba(0, 91, 150, 0.4);
+}
+
+.filter-bar select:hover {
+  border-color: #007ACC;
+  background-color: #ffffff;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="gambar/710578_2fwne0clnzeyebtezlpupwa2y.jpg" alt="Logo">
+      <h1>Lombok Travel Indonesia</h1>
+    </div>
+  </header>
+
+  <div class="filter-bar">
+    <select id="kategori">
+      <option value="">Semua Kategori</option>
+      <option value="pantai">Pantai</option>
+      <option value="gunung">Gunung</option>
+      <option value="airterjun">Air Terjun</option>
+      <option value="lokal">Lokal</option>
+    </select>
+
+    <select id="daerah">
+      <option value="">Semua Daerah</option>
+      <option value="tengah">Lombok Tengah</option>
+      <option value="barat">Lombok Barat</option>
+      <option value="timur">Lombok Timur</option>
+      <option value="utara">Lombok Utara</option>
+    </select>
+  </div>
+
+  <div class="paket-container" id="paketContainer"></div>
+
+  <div class="bottom-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="rekomen.html">Rekomen</a>
+    <a href="harga.html">Lainnya</a>
+  </div>
+
+  <script>
+    const wisataData = [
+      { nama: "Air Terjun Benang Stokel", kategori: "airterjun", daerah: "tengah", gambar: "Air Terjun Benang Stokel.webp", harga: 200000 },
+      { nama: "Pantai Gili Trawangan", kategori: "pantai", daerah: "utara", gambar: "gili-trawangan.jpg", harga: 250000 },
+      { nama: "Pantai Kuta Mandalika", kategori: "pantai", daerah: "tengah", gambar: "kuta-mandalika.jpg", harga: 230000 },
+      { nama: "Pantai Malimbu", kategori: "pantai", daerah: "utara", gambar: "malimbu.jpg", harga: 220000 },
+      { nama: "Bukit Merese", kategori: "gunung", daerah: "tengah", gambar: "merese.jpg", harga: 180000 },
+      { nama: "Taman Narmada", kategori: "lokal", daerah: "barat", gambar: "narmada.jpg", harga: 190000 },
+      { nama: "Pantai Pink", kategori: "pantai", daerah: "timur", gambar: "pantai-pink.jpg", harga: 240000 },
+      { nama: "Gunung Rinjani", kategori: "gunung", daerah: "timur", gambar: "rinjani.jpg", harga: 300000 },
+      { nama: "Desa Sade", kategori: "lokal", daerah: "tengah", gambar: "sade.jpg", harga: 160000 },
+      { nama: "Air Terjun Sendang Gile", kategori: "airterjun", daerah: "utara", gambar: "sendang-gile.jpg", harga: 210000 },
+      { nama: "Pantai Senggigi", kategori: "pantai", daerah: "barat", gambar: "senggigi 2.jpg", harga: 230000 },
+    ];
+
+    const container = document.getElementById("paketContainer");
+
+    function tampilkanWisata(data) {
+      container.innerHTML = "";
+      data.forEach(wisata => {
+        const card = document.createElement("div");
+        card.className = `paket-card ${wisata.kategori} ${wisata.daerah}`;
+        card.innerHTML = `
+          <div class="paket-images">
+            <img src="gambar/${wisata.gambar}" alt="${wisata.nama}">
+          </div>
+          <div class="paket-info">
+            <h2>${wisata.nama}</h2>
+            <p>Kategori: ${wisata.kategori}</p>
+            <p>Daerah: Lombok ${wisata.daerah}</p>
+            <p class="harga">Rp${wisata.harga.toLocaleString()}</p>
+            <a href="pembayaran-dana.html?destinasi=${encodeURIComponent(wisata.nama)}&harga=${wisata.harga}">
+              <img class="pesawat-icon" src="gambar/icon-pesawat.png" alt="Pesan">
+            </a>
+          </div>
+        `;
+        card.addEventListener("click", () => {
+          const namaFile = wisata.nama.toLowerCase().replace(/ /g, "-").replace(/[^\w-]+/g, "");
+          window.location.href = `detail-${namaFile}.html`;
+        });
+        container.appendChild(card);
+      });
+    }
+
+    const kategoriSelect = document.getElementById("kategori");
+    const daerahSelect = document.getElementById("daerah");
+
+    function filterCards() {
+      const kategori = kategoriSelect.value;
+      const daerah = daerahSelect.value;
+
+      const hasil = wisataData.filter(w => {
+        const cocokKategori = !kategori || w.kategori === kategori;
+        const cocokDaerah = !daerah || w.daerah === daerah;
+        return cocokKategori && cocokDaerah;
+      });
+
+      tampilkanWisata(hasil);
+    }
+
+    kategoriSelect.addEventListener("change", filterCards);
+    daerahSelect.addEventListener("change", filterCards);
+
+    // Tampilkan semua saat pertama kali
+    tampilkanWisata(wisataData);
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.filter-bar select {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+    background-color: white;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .filter-bar select:focus {
+    outline: none;
+    border-color: #005b96;
+    background-color: #005b96;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 91, 150, 0.4);
+  }
+  
+  .filter-bar select:hover {
+    border-color: #007ACC;
+    background-color: #e6f3ff;
+  }
+  

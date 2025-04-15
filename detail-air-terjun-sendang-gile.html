@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail - Air Terjun Benang Stokel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefce8;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .description {
+      padding: 1.5rem;
+      background-color: #fff;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .description h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #f97316;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #f97316;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #c2410c;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Detail Wisata - Air Terjun Sendang Gile</header>
+
+  <div class="gallery">
+    <img src="gambar/sendang-gile.jpg" alt="Air Terjun 1" />
+    <img src="gambar/gile2.webp" alt="Air Terjun 2" />
+    <img src="gambar/gile3.webp" alt="Air Terjun 3" />
+    <img src="gambar/sendang-gile.jpg" alt="Air Terjun 4" />
+  </div>
+
+  <div class="description">
+    <h2>Air Terjun Sendang Gile</h2>
+    <p>Terletak di Desa Senaru, Kecamatan Bayan, Kabupaten Lombok Utara, Air Terjun Sendang Gile adalah salah satu destinasi alam paling memukau di Pulau Lombok. Air terjun ini merupakan pintu gerbang ke kawasan Taman Nasional Gunung Rinjani, sekaligus tempat favorit para wisatawan yang mencari ketenangan, kesegaran, dan keindahan alam yang autentik.
+
+      Sendang Gile memiliki ketinggian sekitar 30 meter dan dialiri oleh air yang berasal langsung dari mata air Gunung Rinjani—gunung tertinggi kedua di Indonesia. Tak heran jika airnya begitu jernih, sejuk, dan dipercaya memiliki efek menyegarkan tubuh dan pikiran. Banyak pengunjung yang sengaja datang hanya untuk merasakan sensasi mandi atau berendam di bawah guyuran air yang deras namun bersih ini.
+      
+      Untuk mencapai air terjun, pengunjung harus menyusuri jalur tangga sejauh kurang lebih 200 anak tangga, kemudian melewati hutan tropis yang rimbun dan menyeberangi jembatan kecil. Perjalanan ini terasa seperti petualangan mini yang menyenangkan, karena di sepanjang jalan, kamu bisa mendengar suara alam yang menenangkan, melihat monyet-monyet liar, dan menikmati udara pegunungan yang segar.
+      
+      Nama "Sendang Gile" sendiri konon berasal dari kisah rakyat setempat, di mana dahulu kala ada seorang warga yang sedang mengejar singa gila (sendeng gile dalam Bahasa Sasak) dan secara tidak sengaja menemukan air terjun ini. Meski terdengar mistis, kisah tersebut menjadi bagian dari daya tarik legenda lokal yang memperkaya pengalaman wisata.
+      
+      Air Terjun Sendang Gile sering dikunjungi bersama Air Terjun Tiu Kelep, yang letaknya tidak jauh di atasnya. Banyak wisatawan menjelajahi keduanya dalam satu perjalanan penuh petualangan.
+      
+      Bagi kamu pencinta alam dan ketenangan, Sendang Gile adalah surga tersembunyi yang menyegarkan jiwa. Suara gemuruh air, kabut halus di udara, dan latar hutan hijau menjadikannya tempat yang ideal untuk menyatu dengan alam.</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1745.2320238490524!2d116.4054250384469!3d-8.305083193849383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdd5ff50d5ce0f%3A0x21a902b2770f8633!2sAir%20Terjun%20Sendang%20Gile!5e1!3m2!1sid!2sid!4v1744415402980!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Kembali</button>
+</body>
+</html>
